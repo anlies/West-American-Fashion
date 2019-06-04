@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jq/jquery-1.11.3.js"></script> 
+		<script src="js/glass.js"></script>
+		 
+	</head>
+	<style>
+	table,p,a,body,ul,li,dl,ol,dt,dd,h1,h2,h3,h4,h5,form,fieldset,img,html,form,button,input,span{margin: 0;padding: 0;}
+	
+	a{text-decoration: none;}
+	img{display: block;border: 0;}
+	h1,h2,h3,h4,h5,h6{font-weight: 100;}
+	body{font-size: 12px;}
+	i,em{font-style: normal;}
+	b,strong{font-weight: 100;}
+	ul,ol{list-style: none;} 
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/detail.css"/> 
+	<body>
+		<div id="return-top">
+			<ul>
+				<li id="return-lis"></li>
+				<li id="return-qq"></li>
+				<li id="return-T"></li>
+			</ul>
+		</div>
+		<!--   lean_overlay-->
+		<div id="lean_overlay"></div>
+		<div id="modal">
+			<div id="close_">
+				<span class="no-start">你还没有登录</span>
+				<span class="btn-close"></span> 
+			</div>
+			<div id="switch">
+				<div class="login-" id="login-">登录
+					<div id="login-dis">
+						<p class="login-p1">
+							<span>手机/邮箱：</span>
+							<input class="_input" id="phnoe" type="text" value="" />
+						</p>
+						<p>
+							<span>密 &nbsp &nbsp  &nbsp&nbsp码：</span>
+							<input id="password" class="_input" type="password" /> 
+						</p>
+						<p>
+							<span>确认   密码：</span>
+							<input class="_input" type="password" /> 
+						</p>
+						<p>
+							<input id="_radio" type="checkbox"/><span>订阅美西时尚资讯</span>
+						</p>
+						<p><input id="res-btn" type="button"/ value="注册"></p>
+						
+					</div>
+					<div id="res-dis">
+						<p class="login-p1">
+							<span>手机/邮箱：</span>
+							<input class="_input"  type="text" value="" />
+						</p>
+						<p class="login-p2">
+							<span>密 &nbsp &nbsp   &nbsp&nbsp码：</span>
+							<input class="_input" type="password" /> 
+							 
+						</p>
+						 
+						<p class="login-p3">
+							<input  type="checkbox"/><span>下次自动登录</span>
+						</p>
+						<p><input id="res-btn" type="button"/ value="登录"></p>
+						
+					</div>
+				
+				</div>
+				<div class="register-" id="register-">注册</div>
+			</div>
+		</div>
+		
+	<!--    top-->
+	<div id="top">
+		<div id="header">
+			<div id="header-left">
+				<a id="header-left1" href="register.html">注册</a>
+				<a id="header-left2" href="login.html">登录</a>
+				<a id="header-left3" href="">订单查询</a> 
+			</div>
+			<div id="header-right">
+				<div id="header-right1">客服热线：4000-250-630</div>
+				<div id="header-right2">
+					<img src="img/guanzhu.png" />
+					<span>关注我们</span>
+					<div id="guanzhu">
+						<ul>
+							<li><a href=""><img src="img/sina.gif"/> 新浪微博 </a></li>
+							<li><a href=""><img src="img/wechat.gif"/> 美西微信 </a></li>
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div id="header-right3">
+					<a href="">
+						<div id="header-right3-left">
+							<em><img src="img/dai.png"/></em>
+							<i>购物袋（<span>0</span>）</i>
+						</div>
+						<div id="header-right3-right">
+							<i><img src="img/xia.png" alt="" /></i>
+						</div> 
+					</a>
+					<div id="header-right3-xia">
+						您的购物袋是空的
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</div>
+	<!--logo-->
+	<div id="logo">
+		<div id="logo-weichat">
+			<a href=""><img src="img/wei.png"/></a>
+			
+		</div>
+		<div id="logo-wen">
+			<p id="logo-wen-p1">美西时尚APP</p>
+			<p id="logo-wen-p2">更多精彩等你发现</p>
+		</div>
+		<div id="logo-big">
+			<a href="index.html"><img src="img/logo.png"/></a>
+		</div>
+		<div id="logo-sea">
+			<input type="text" value="请输入您的关键词" onfocus="this.value=''" onblur="this.value='请输入您的关键词'"  />
+			<button><img src="img/seach.png" alt="" /></button> 
+		</div>
+	</div>
+	<!--nav-->
+	<div id="nav">
+		<ul>
+			<li class="nav-li nav-li1"><a href="index.html">首页</a></li>
+			<li class="nav-li nav-li1"><a href="product.html">最近单品</a>
+				<div id="nav-dis1" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+				
+			</li>
+			<li class="nav-li nav-li1"><a href="">女士</a>
+				<div id="nav-dis2" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/man-bags.jpg" alt="" /></a> 
+							<a href="">Semir </a> 
+							<a href="">CEO 男士   公文包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+				
+				
+			</li>
+			<li class="nav-li nav-li1"><a href="">男士</a>
+				<div id="nav-dis3" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/T-shirt.jpg" alt="" /></a> 
+							 
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">童装</a>
+				<div id="nav-dis4" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/watch.jpg" alt="" /></a> 
+							 
+							
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">腕表</a>
+				<div id="nav-dis5" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">品牌</a>
+				<div id="nav-dis6" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a>  
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/T-man.jpg" alt="" /></a> 
+							<a href="">Jeep 吉普</a> 
+							<a href="">美特斯    运动上衣</a>  
+						</li>
+					</ul> 
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="active.html">特惠区</a>
+				<div id="nav-dis7" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a>  
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a>  
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li id="li-last"class="nav-li1"><a href="">M潮流</a></li>
+		</ul>
+	</div>
+	
+	<!--detail-->
+	<div id="detail">
+		<div id="det-left">
+			<p><img class="det-pre" src="img/detail/det-pre.png" alt="" /></p>
+			<ul id="det-ul">
+				<img class="border-f border-c" src="img/detail/left-1.jpg" alt="" />
+				<img class="border-f" src="img/detail/left-2.jpg" alt="" />
+				<img class="border-f" src="img/detail/left-3.jpg" alt="" />
+				<img class="border-f" src="img/detail/left-4.jpg" alt="" />
+				<img class="border-f" src="img/detail/left-5.jpg" alt="" />
+			</ul>
+			<p><img class="det-next" src="img/detail/det-next.png" alt="" /></p> 
+		</div>
+		<div id="det-center">
+			<div id="det-mb"></div>
+			<div id="inner"></div>
+			<img id="det-img" src="img/detail/center1.png" alt="" />
+			<!--<img class="center" src="img/detail/center-2.png" alt="" />
+			<img class="center" src="img/detail/center-3.png" alt="" />
+			<img class="center" src="img/detail/center-4.png" alt="" />
+			<img class="center" src="img/detail/center-5.png" alt="" />-->
+		</div>
+		<div id="det-right">
+			<div id="move">
+				<img id="b-move" src="img/detail/big1.jpg"/>
+			</div>
+			<a class="font-col" href="">Dolce&Gabbana 杜嘉班纳</a>
+			<span class="blo1_">全棉 男仕 夹克</span>
+			<span class="blo2_">参考价：￥9800.00</span>
+			<span class="blo3_">美西价：￥4899.00</span>
+			<p class="time_">到货时间： 该商品到货时间预计3-5个工作日 </p>
+			<p class="check_">请选择您的尺码</p>
+			<span class="bor_">48</span> 
+			<input class="input1" type="button" />
+			<input class="input2" type="button" />
+			 
+			<div id="share">
+				<span>分享:</span>
+				<a href=""><img src="img/detail/sina.png" alt="" /></a>
+				<a href=""><img src="img/detail/chat.png" alt="" /></a>
+				<a href=""><img src="img/detail/dou.png" alt="" /></a>
+				<div class="coll">
+					<img class="img_mar" src="img/detail/coll1.png" alt="" />
+					<img class="img_none img_mar" src="img/detail/coll2.png" alt="" />
+					<em>加入收藏（196)</em>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--商品 推荐-->
+	<div id="recommend">
+		<div class="rec-logo"></div>
+		<ul id="rec-ul">
+		 	<li>
+		 		<img src="img/detail/rec1.png" alt="" />
+		 		<p><a href="">Bottega Veneta 葆蝶家</a></p>
+		 		<p><a href="">麂皮 男士 乐福鞋</a></p> 
+		 	</li>
+		 	<li>
+		 		<img src="img/detail/rec2.png" alt="" />
+		 		<p>	<a href="">Saint Laurent 圣罗兰</a></p>
+		 		<p><a href="">深蓝色牛皮立体Logo手提包</a></p>
+		 	</li>
+		 	<li>
+		 		<img src="img/detail/rec3.png" alt="" />
+		 		<p><a href="">Dior 迪奥</a></p>
+		 		<p><a href="">牛皮 男仕 平底鞋</a></p>
+		 	</li>
+		 	<li>
+		 		<img src="img/detail/rec4.png" alt="" />
+		 		<p><a href="">Versace Collection 范思哲系列</a></p>
+		 		<p><a href="">春夏新款 棉质 男仕 运动裤套装</a></p>
+		 	</li>
+		 	<li>
+		 		<img src="img/detail/rec5.png" alt="" />
+		 		<p><a href=""> Versace Collection 范思哲系列</a></p>
+		 		<p><a href="">牛皮 男士 乐福鞋</a></p>
+		 	</li>
+		</ul>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="new_"><a href="">美西奢侈品网</a>><a href="">奢侈品牌导购</a>><a id="new-b" href="">MCM</a>><a href="">MCM旅行包</a>
+		<textarea id="text" name="" rows="" cols=""> 
+乔治· 阿玛尼Giorgio Armani长袖T恤/POLO
+乔治· 阿玛尼Giorgio Armani牛仔裤
+乔治· 阿玛尼Giorgio Armani棉衣
+乔治· 阿玛尼Giorgio Armani短裤
+乔治· 阿玛尼Giorgio Armani大衣
+乔治· 阿玛尼Giorgio Armani其他
+乔治· 阿玛尼Giorgio Armani西裤
+乔治· 阿玛尼Giorgio Armani休闲裤
+乔治· 阿玛尼Giorgio Armani牛仔裤
+乔治· 阿玛尼Giorgio Armani西装套装
+乔治· 阿玛尼Giorgio Armani皮上衣
+乔治· 阿玛尼Giorgio Armani羽绒服
+乔治· 阿玛尼Giorgio Armani风衣
+乔治· 阿玛尼Giorgio Armani卫衣
+乔治· 阿玛尼Giorgio Armani短外衣夹克
+乔治· 阿玛尼Giorgio Armani短袖T恤/POLO
+乔治· 阿玛尼Giorgio Armani长袖衬衫
+乔治· 阿玛尼Giorgio Armani长袖针织/毛衫
+乔治· 阿玛尼Giorgio Armani
+		</textarea>
+		
+	</div>
+		<!--foot-->
+	<div id="foot">
+		 <div id="foot1">
+		 	<ul>
+		 		<li><p class="foot-p">购物指南</p>
+			 		<a href="">购物流程</a>
+			 		<a href="">购物方式</a>
+		 		</li>
+		 		<li><p class="foot-p">支付方式</p>
+			 		<a href="">如何付款</a>
+			 		<a href="">发票方式</a>
+		 		</li>
+		 		<li><p class="foot-p">商品说明</p>
+			 		<a href="">商品尺码</a>
+			 		<a href="">商品包装</a>
+		 		</li>
+		 		<li><p class="foot-p">客服中心</p>
+			 		<a href="">七天退货</a>
+			 		<a href="">常见问题</a>
+		 		</li>
+		 	</ul>
+		 </div>
+		 <div id="foot2">
+		 	<p class="foot2-p1">订购热线</p>
+		 	<p class="foot2-p2">4000-250-630</p>
+		 </div>
+		 <div id="foot3">
+		 	<p class="foot3-p1">在线客服</p>
+		 	<p class="foot3-p2">
+		 		<a href><img src="img/qq.png"/></a>
+		 		<a href><img src="img/chat.png"/></a>
+		 	</p>
+		 </div>
+		 <div id="foot4">
+		 	<ul>
+		 		<li><p class="foot4-p">美西时尚APP</p><a href><img src="img/meixi.png"/></a></li>
+		 		<li><p class="foot4-p">关注我们</p><a href><img src="img/meixi-chat.png"/></a></li>
+		 	</ul>
+		 </div>
+	</div>
+	<div id="foot-nav">
+		<ul>
+			<li><a class="foot-nav-a" href="">首页</a></li>
+			<li><a class="foot-nav-a" href="">关于美西</a></li>
+			<li><a class="foot-nav-a" href="">媒体报道</a></li>
+			<li><a class="foot-nav-a" href="">正品保障</a></li>
+			<li><a class="foot-nav-a" href="">业务合作</a></li>
+			<li><a class="foot-nav-a" href="">隐私声明</a></li>
+			<li><a class="foot-nav-a" href="">加入美西</a></li>
+			<li><a class="foot-nav-a" href="">网站地图</a></li>
+			<li><a class="foot-nav-a" href="">联系我们</a></li> 
+		</ul>
+	</div>
+	<div id="foot-last">
+		<ul>
+			<li id="foot-last1"><a class="move" href=""><img src="img/foot-last-a.png"/><img class="disp" src="img/foot-last-aa.png"/></a></li>
+			<li id="foot-last2"><a class="move" href=""><img src="img/foot-last-b.png"/><img class="disp" src="img/foot-last-bb.png"/></a></li>
+			<li id="foot-last3"><a href="">媒体支持:</a></li>
+			<li id="foot-last4"><a class="move" href=""><img src="img/foot-last-c.png"/><img class="disp" src="img/foot-last-cc.png"/></a></li>
+			<li id="foot-last5"><a class="move" href=""><img src="img/foot-last-d.png"/><img class="disp" src="img/foot-last-dd.png"/></a></li>
+			<li id="foot-last6"><a href=""><img src="img/foot-last-e.png"/></a></li>
+		</ul>
+	</div>
+	<div id="last">
+		<p id="last1"><span>Copyright © 2008-2016 美西时尚-</span><a href="">高端时尚生活电商</a></p>
+		<p id="last2"><a href="">沪ICP备09001221号</a></p>
+		<p id="last3">
+			<a href=""><img src="img/good.png"/></a>
+			<a href=""><img src="img/good1.png"/></a>
+		</p>
+		
+	</div>
+	</body>
+	
+	
+	<script>
+		$(function(){
+			$("#header-right2").hover(function(){
+				$(this).find("#guanzhu").show(); 
+			},function(){ 
+				$(this).find("#guanzhu").hide();
+			}) 
+			$("#header-right3").hover(function(){
+				$(this).find("#header-right3-xia").show(); 
+			},function(){ 
+				$(this).find("#header-right3-xia").hide();
+			}) 
+			$("#nav ul").find(".nav-li").hover(function(){
+				$(this).css({"backgroundColor":"#8e0c3a"}) 
+			},function(){
+				$(this).css({"backgroundColor":"#ffffff"})
+			})
+			$(".nav-li1").hover(function(){
+				$(this).find("div").show()
+			},function(){
+				$(this).find("div").hide()
+			})
+			$("#foot-nav ul li").hover(function(){
+				$(this).find(".foot-nav-a").css({"color":"#fff"});
+		
+			},function(){ 
+				$(this).find(".foot-nav-a").css({"color":"#7a7a7a"});
+			})
+			$("#fixtop-right").hover(function(){
+				$("#fix-nav").show();
+		
+			},function(){ 
+				$("#fix-nav").hide(); 
+			})
+			$(".move").hover(function(){
+				$(this).find("img").removeClass();
+				$(this).find("img").eq(0).addClass("disp");
+		
+			},function(){
+		
+				$(this).find("img").removeClass();
+				$(this).find("img").eq(1).addClass("disp");
+				
+			})  
+			$("#return-T").click(function () {
+       			$('body,html').animate({scrollTop:0},300); 
+ 			}) 
+		/*	lean_overlay*/
+			$(".coll").hover(function(){ 
+				$(this).css({"color":"#8e0c3a"});
+				$(this).find("img").eq(0).addClass("img_none");
+				$(this).find("img").eq(1).removeClass("img_none");
+				$(this).click(function(){
+					$("#lean_overlay").show();
+					$("#modal").show(); 
+				})
+				$(".btn-close").click(function(){
+					$("#lean_overlay").hide();
+					$("#modal").hide(); 
+					
+				})
+				$("#login-").click(function(){
+					$("#login-dis").hide();
+					$("#res-dis").show();
+				})
+				$("#register-").click(function(){
+					$("#login-dis").show();
+					$("#res-dis").hide();
+				})
+			},function(){
+				$(this).css({"color":"#6c6c6c"}) ;
+				$(this).find("img").eq(1).addClass("img_none");
+				$(this).find("img").eq(0).removeClass("img_none"); 
+			})
+			$("#new_").hover(function(){
+				$("#text").show();
+				
+			},function(){
+				$("#text").hide();
+			})
+			
+		/*	glass 切换图片*/
+			var that = 1; 
+			$("#det-ul img").mouseenter(function(){
+				that = $(this).index()+1;
+				var src = "img/detail/center"+that+".png" 
+				$(this).addClass("border-c");
+				$(this).siblings().removeClass("border-c"); 
+				$("#det-center").find("img").attr({"src":src}) 
+			})  
+			$("#det-mb").on({
+				mouseenter:function(){ 
+					var src1 = "img/detail/big"+that+".jpg";
+					$("#b-move").attr({"src":src1});
+					$("#inner").show();
+					$("#move").show() 
+				},
+				mouseleave:function(){
+					$("#inner").hide();
+					$("#move").hide() ;
+					$("#b-move").attr({"src":"img/detail/big1.jpg"}); 
+				}
+			})
+			
+			 
+			 
+			 
+			
+			
+			glass("det-mb","inner","move","b-move")
+			
+		})
+		
+		
+		
+		
+		
+		 
+		 
+	</script>
+</html>

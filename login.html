@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jq/jquery-1.11.3.js"></script>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<style>
+	table,p,a,body,ul,li,dl,ol,dt,dd,h1,h2,h3,h4,h5,form,fieldset,img,html,form,button,input,span{margin: 0;padding: 0;}
+	
+	a{text-decoration: none;}
+	img{display: block;border: 0;}
+	h1,h2,h3,h4,h5,h6{font-weight: 100;}
+	body{font-size: 12px;}
+	i,em{font-style: normal;}
+	b,strong{font-weight: 100;}
+	ul,ol{list-style: none;} 
+	</style>
+	<body>
+			<!--    top-->
+		<div id="top">
+			<div id="header">
+				<div id="header-left">
+					<a id="header-left1" href="register.html">注册</a>
+					<a id="header-left2" href="login.html">登录</a>
+					<a id="header-left3" href="">订单查询</a> 
+				</div>
+				<div id="header-right">
+					<div id="header-right1">客服热线：4000-250-630</div>
+					<div id="header-right2">
+						<img src="img/guanzhu.png" />
+						<span>关注我们</span>
+						<div id="guanzhu">
+							<ul>
+								<li><a href=""><img src="img/sina.gif"/> 新浪微博 </a></li>
+								<li><a href=""><img src="img/wechat.gif"/> 美西微信 </a></li>
+							</ul>
+							
+						</div>
+						
+					</div>
+					<div id="header-right3">
+						<a href="">
+							<div id="header-right3-left">
+								<em><img src="img/dai.png"/></em>
+								<i>购物袋（<span>0</span>）</i>
+							</div>
+							<div id="header-right3-right">
+								<i><img src="img/xia.png" alt="" /></i>
+							</div> 
+						</a>
+						<div id="header-right3-xia">
+							您的购物袋是空的
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</div>
+		<!--logo-->
+		<div id="logo">
+			<div id="logo-weichat">
+				<a href=""><img src="img/wei.png"/></a>
+				
+			</div>
+			<div id="logo-wen">
+				<p id="logo-wen-p1">美西时尚APP</p>
+				<p id="logo-wen-p2">更多精彩等你发现</p>
+			</div>
+			<div id="logo-big">
+				<a href="index.html"><img src="img/logo.png"/></a>
+			</div>
+			<div id="logo-sea">
+				<input type="text" value="请输入您的关键词" onfocus="this.value=''" onblur="this.value='请输入您的关键词'"  />
+				<button><img src="img/seach.png" alt="" /></button> 
+			</div>
+		</div>
+		
+		<!--login-->
+		<div id="login">
+			<div id="login-banner">
+				<img src="img/register/login.png">
+			</div>
+			<form id="Form" action="">
+				<p class="p-margint">
+					<span>手机/邮箱：</span>
+					<input class="_input" id="phnoe" type="text" value="" />
+				</p>
+				<p class="p-margint">
+					<span>密 &nbsp &nbsp &nbsp&nbsp码：</span>
+					<input id="password" class="_input" type="password" />
+					
+				</p>
+				<p class="p-margint">
+					<input id="_radio" type="checkbox"/><span>下次自动登录</span>
+					<a id="forget" href="">忘记密码？</a>
+				</p>
+				<p class="p-margint">
+					<input type="button" id="_button" value="登录" />
+				</p>
+				<p id="margin-top"><a id="reg" href="register.html">立即注册</a></p>
+				
+				
+			</form>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<div id="foot-nav">
+		<ul>
+			<li><a class="foot-nav-a" href="">首页</a></li>
+			<li><a class="foot-nav-a" href="">关于美西</a></li>
+			<li><a class="foot-nav-a" href="">媒体报道</a></li>
+			<li><a class="foot-nav-a" href="">正品保障</a></li>
+			<li><a class="foot-nav-a" href="">业务合作</a></li>
+			<li><a class="foot-nav-a" href="">隐私声明</a></li>
+			<li><a class="foot-nav-a" href="">加入美西</a></li>
+			<li><a class="foot-nav-a" href="">网站地图</a></li>
+			<li><a class="foot-nav-a" href="">联系我们</a></li> 
+		</ul>
+	</div>
+	<div id="last">
+		<p id="last1"><span>Copyright © 2008-2016 美西时尚-</span><a href="">高端时尚生活电商</a></p>
+		<p id="last2"><a href="">沪ICP备09001221号</a></p>
+		<p id="last3">
+			<a href=""><img src="img/good.png"/></a>
+			<a href=""><img src="img/good1.png"/></a>
+		</p>
+		
+	</div>
+	</body>
+	
+	<script>
+		$("#header-right2").hover(function(){
+			$(this).find("#guanzhu").show();
+	
+		},function(){
+	
+			$(this).find("#guanzhu").hide();
+		})
+
+		$("#header-right3").hover(function(){
+			$(this).find("#header-right3-xia").show();
+	
+		},function(){
+	
+			$(this).find("#header-right3-xia").hide();
+		})
+		$("#foot-nav ul li").hover(function(){
+			$(this).find(".foot-nav-a").css({"color":"#fff"});
+	
+		},function(){
+	
+			$(this).find(".foot-nav-a").css({"color":"#7a7a7a"});
+		})
+		$("._input").blur(function(){
+			$(this).css({"border":"1px solid #8e0c3a"}) 
+		})
+		
+		
+		
+		
+		
+		
+	
+
+	</script>
+</html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		   
+		<script src="jq/jquery-1.11.3.js"></script>
+		<script src="js/startMove.js"></script>
+		<script src="js/lunbo.js"></script> 
+		<script>
+		//滚动条滚动的距离
+			window.onscroll = function(){ 
+				var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+				var ofix =document.getElementById("fixtop"); 
+				if(scrollTop >=200)
+				{
+					ofix.style.position="fixed";
+					ofix.style.top = 0;
+					ofix.style.display="block"; 
+				}
+				else
+				{
+					ofix.style.position= "absolute";
+					ofix.style.display="none";
+				}
+			} 
+		</script>
+	</head>
+	<style>
+	table,p,a,body,ul,li,dl,ol,dt,dd,h1,h2,h3,h4,h5,form,fieldset,img,html,form,button,input,span{margin: 0;padding: 0;}
+	
+	a{text-decoration: none;}
+	img{display: block;border: 0;}
+	h1,h2,h3,h4,h5,h6{font-weight: 100;}
+	body{font-size: 12px;}
+	i,em{font-style: normal;}
+	b,strong{font-weight: 100;}
+	ul,ol{list-style: none;} 
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<body>
+	<!--    fixtop-->
+	<div id="fixtop">
+		<div id="fixscroll">
+			<div id="fixtop-left">
+				<a href=""><img src="img/fixtop-logo.png"/></a>
+			</div>
+			<div id="fixtop-center">
+				<input type="text" value="请输入您的关键词" onfocus="this.value=''" onblur="this.value='请输入您的关键词'" />
+				<a href=""><img src="img/fixsea.png"/></a>
+			</div>
+			<div id="fixtop-right">
+				<a href=""><img src="img/fixshop.png" /><span>时尚导购</span></a>
+			</div>
+			<div id="fix-nav" class="nav-dis nav-d">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+			
+		</div>
+		
+	</div>
+	<!--    top-->
+	<div id="top">
+		<div id="header">
+			<div id="header-left">
+				<a id="header-left1" href="register.html">注册</a>
+				<a id="header-left2" href="login.html">登录</a>
+				<a id="header-left3" href="">订单查询</a> 
+			</div>
+			<div id="header-right">
+				<div id="header-right1">客服热线：4000-250-630</div>
+				<div id="header-right2">
+					<img src="img/guanzhu.png" />
+					<span>关注我们</span>
+					<div id="guanzhu">
+						<ul>
+							<li><a href=""><img src="img/sina.gif"/> 新浪微博 </a></li>
+							<li><a href=""><img src="img/wechat.gif"/> 美西微信 </a></li>
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div id="header-right3">
+					<a href="">
+						<div id="header-right3-left">
+							<em><img src="img/dai.png"/></em>
+							<i>购物袋（<span>0</span>）</i>
+						</div>
+						<div id="header-right3-right">
+							<i><img src="img/xia.png" alt="" /></i>
+						</div> 
+					</a>
+					<div id="header-right3-xia">
+						您的购物袋是空的
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</div>
+	<!--logo-->
+	<div id="logo">
+		<div id="logo-weichat">
+			<a href=""><img src="img/wei.png"/></a>
+			
+		</div>
+		<div id="logo-wen">
+			<p id="logo-wen-p1">美西时尚APP</p>
+			<p id="logo-wen-p2">更多精彩等你发现</p>
+		</div>
+		<div id="logo-big">
+			<a href="index.html"><img src="img/logo.png"/></a>
+		</div>
+		<div id="logo-sea">
+			<input type="text" value="请输入您的关键词" onfocus="this.value=''" onblur="this.value='请输入您的关键词'"  />
+			<button><img src="img/seach.png" alt="" /></button> 
+		</div>
+	</div>
+	<!--nav-->
+	<div id="nav">
+		<ul>
+			<li class="nav-li nav-li1"><a href="index.html">首页</a></li>
+			<li class="nav-li nav-li1"><a href="product.html">最近单品</a>
+				<div id="nav-dis1" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+				
+			</li>
+			<li class="nav-li nav-li1"><a href="">女士</a>
+				<div id="nav-dis2" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/man-bags.jpg" alt="" /></a> 
+							<a href="">Semir </a> 
+							<a href="">CEO 男士   公文包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+				
+				
+			</li>
+			<li class="nav-li nav-li1"><a href="">男士</a>
+				<div id="nav-dis3" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/T-shirt.jpg" alt="" /></a> 
+							 
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">童装</a>
+				<div id="nav-dis4" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/watch.jpg" alt="" /></a> 
+							 
+							
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">腕表</a>
+				<div id="nav-dis5" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="">品牌</a>
+				<div id="nav-dis6" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a> 
+							
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/T-man.jpg" alt="" /></a> 
+							<a href="">Jeep 吉普</a> 
+							<a href="">美特斯    运动上衣</a> 
+							
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li class="nav-li nav-li1"><a href="active.html">特惠区</a>
+				<div id="nav-dis7" class="nav-dis">
+					<ul>
+						<li class="nav-dis1"> 
+								<a href="">今日上新</a> 
+								<a href="">昨日上新</a> 
+								<a class="a1" href="">上周上新</a> 
+								<a href="">所有男士新品</a> 
+								<a href="">所有女士新品</a>  
+						</li>
+						<li class="nav-dis2">
+							<a href="">男士Man</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis3">
+							<a href="">女士Woman</a> 
+							<a href="">包类Bags</a> 
+							<a href="">服装Clothes</a> 
+							<a href="">配饰Accesso</a> 
+							<a href="">鞋类Shoes</a> 
+						</li>
+						<li class="nav-dis4">
+							<a href="">今日推荐单品</a>  
+						</li>
+						<li class="nav-dis5">
+							<a href=""><img src="img/nav-bag1.jpg" alt="" /></a> 
+							<a href="">Love moschino 莫斯奇诺</a> 
+							<a href="">PU 女士   手提包</a>  
+						</li>
+					</ul>
+					
+				</div>
+			</li>
+			<li id="li-last"class="nav-li1"><a href="">M潮流</a></li>
+		</ul>
+	</div>
+	<!--banner-->
+	<div id="banner">
+		<div id="pic">
+			<ul id="imgul" class="imgul"> 
+				<li><a href=""><img src="img/banner1.jpg"/></a></li>
+				<li><a href=""><img src="img/banner2.jpg"/></a></li>
+				<li><a href=""><img src="img/banner3.jpg"/></a></li>
+				<li><a href=""><img src="img/banner4.jpg"/></a></li>
+				<li><a href=""><img src="img/banner5.png"/></a></li>
+				<li><a href=""><img src="img/banner6.png"/></a></li>
+				<li><a href=""><img src="img/banner1.jpg"/></a></li>
+			</ul> 
+		</div>
+		<div id="banner-pre"> 
+		</div>
+		<div id="banner-next"> 
+		</div>
+	</div>
+	<!--推荐-->
+	<div class="spe">
+		<div class="spe-top">
+			<div class="spe-line"></div>
+			<img src="img/spe.png"/>
+		</div>
+		<div class="spe-buttom">
+			<div class="spe-buttom1">
+				<a href=""><img class="spe-img1" src="img/spe1.png"</a>
+				<a href=""><img src="img/spe2.png"</a> 
+			</div>
+			<div class="spe-buttom2">
+				<a href=""><img src="img/spe5.png"</a>
+			</div>
+			<div class="spe-buttom3">
+				<a href=""><img class="spe-img1" src="img/spe3.png"</a>
+				<a href=""><img src="img/spe4.png"</a>
+			</div> 
+		</div> 
+	</div>
+	<div class="spe">
+		<div class="spe-top">
+			<div class="spe-line"></div>
+			<img src="img/her.png"/>
+		</div>
+		<div class="spe-buttom">
+			<div class="spe-buttom1">
+				<a href=""><img class="spe-img1" src="img/her1.png"</a>
+				<a href=""><img src="img/her2.png"</a>
+				
+			</div>
+			<div class="spe-buttom2">
+				<a href=""><img src="img/her3.png"</a>
+			</div>
+			<div class="spe-buttom3">
+				<a href=""><img class="spe-img1" src="img/her4.png"</a>
+				<a href=""><img src="img/her5.png"</a>
+			</div> 
+		</div> 
+	</div>
+	<div class="spe">
+		<div class="spe-top">
+			<div class="spe-line"></div>
+			<img src="img/Big Sale.png"/>
+		</div>
+		<div class="spe-buttom">
+			<div class="spe-buttom1">
+				<a href=""><img class="spe-img1" src="img/sale1.png"</a>
+				<a href=""><img src="img/sale2.png"</a>
+				
+			</div>
+			<div class="spe-buttom2">
+				<a href=""><img src="img/sale3.png"</a>
+			</div>
+			<div class="spe-buttom3">
+				<a href=""><img class="spe-img1" src="img/sale4.png"</a>
+				<a href=""><img src="img/sale5.png"</a>
+			</div> 
+		</div> 
+	</div>
+	<div class="sold">
+			<div class="sold-line"></div>
+			<img src="img/sold.png"/>
+	</div>
+	<div class="Being-sold">
+		<div id="sold-pre">
+			<img src="img/sold-pre.png"/> 
+		</div>
+		<div class="sold-clo">
+			<ul id="soldul">
+				<li><a href=""><img src="img/sold1.jpg"/><p>Gucci<br>古驰</p></a><div>已加入购物袋</div></li>
+				<li><a href=""><img src="img/sold2.jpg"/><p>Coach<br>蔻词</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold3.jpg"/><p>Rayban<br>雷朋</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold4.jpg"/><p>Prada<br>普拉达</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold5.jpg"/><p>Michacl<br>迈克高仕</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold6.jpg"/><p>Fendi<br>芬迪</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold7.jpg"/><p>Gucci<br>古驰</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold8.jpg"/><p>Coach<br>蔻词</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold9.jpg"/><p>Rayban<br>雷朋</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold10.jpg"/><p>Prada<br>普拉达</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold11.jpg"/><p>Michacl<br>迈克高仕</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold12.jpg"/><p>Fendi<br>芬迪</p></a><div>已加入购物袋</div></a></li>
+				<li><a href=""><img src="img/sold13.jpg"/><p>Prada<br>普拉达</p></a><div>已加入购物袋</div></a></li>
+				 
+			</ul> 
+		</div>
+		<div id="sold-next">
+			<a href=""><img src="img/sold-next.png"/></a>
+		</div>
+	</div>
+	<div class="sold">
+			<div class="sold-line"></div>
+			<img src="img/trends.png"/>
+	</div>
+	<div class="trends">
+		<ul class="trends-ul">
+			<li><a href=""><img src="img/trend1.png" alt="" /></a></li>
+			<li class="trends-center"><a href=""><img src="img/trend2.png" alt="" /></a></li>
+			<li><a href=""><img src="img/trend3.png" alt="" /></a></li>
+		</ul>
+	</div>
+	<div class="sold">
+			<div class="sold-line"></div>
+			<img src="img/more.png"/>
+	</div>
+	<div class="more">
+		<ul>
+			<li><a href=""><img src="img/more1.png" alt="" /></a></li>
+			<li class="trends-center"><img src="img/more2.png" alt="" />
+				<div class="trends-center1" > 
+					 <img class="trendul1" src="img/email.png" /> 
+					 <input class="trendul2" type="text" value="请填写您的E-mail" onfocus="this.value=''" onblur="this.value='请填写您的E-mail'"/>
+					 <a class="trendul3" href="">即刻订阅</a>  
+				</div>
+			</li>
+			<li><a href=""><img src="img/more3.png" alt="" /></a></li>
+		</ul>
+	</div>
+	<!--foot-->
+	<div id="foot">
+		 <div id="foot1">
+		 	<ul>
+		 		<li><p class="foot-p">购物指南</p>
+			 		<a href="">购物流程</a>
+			 		<a href="">购物方式</a>
+		 		</li>
+		 		<li><p class="foot-p">支付方式</p>
+			 		<a href="">如何付款</a>
+			 		<a href="">发票方式</a>
+		 		</li>
+		 		<li><p class="foot-p">商品说明</p>
+			 		<a href="">商品尺码</a>
+			 		<a href="">商品包装</a>
+		 		</li>
+		 		<li><p class="foot-p">客服中心</p>
+			 		<a href="">七天退货</a>
+			 		<a href="">常见问题</a>
+		 		</li>
+		 	</ul>
+		 </div>
+		 <div id="foot2">
+		 	<p class="foot2-p1">订购热线</p>
+		 	<p class="foot2-p2">4000-250-630</p>
+		 </div>
+		 <div id="foot3">
+		 	<p class="foot3-p1">在线客服</p>
+		 	<p class="foot3-p2">
+		 		<a href><img src="img/qq.png"/></a>
+		 		<a href><img src="img/chat.png"/></a>
+		 	</p>
+		 </div>
+		 <div id="foot4">
+		 	<ul>
+		 		<li><p class="foot4-p">美西时尚APP</p><a href><img src="img/meixi.png"/></a></li>
+		 		<li><p class="foot4-p">关注我们</p><a href><img src="img/meixi-chat.png"/></a></li>
+		 	</ul>
+		 </div>
+	</div>
+	<div id="foot-nav">
+		<ul>
+			<li><a class="foot-nav-a" href="">首页</a></li>
+			<li><a class="foot-nav-a" href="">关于美西</a></li>
+			<li><a class="foot-nav-a" href="">媒体报道</a></li>
+			<li><a class="foot-nav-a" href="">正品保障</a></li>
+			<li><a class="foot-nav-a" href="">业务合作</a></li>
+			<li><a class="foot-nav-a" href="">隐私声明</a></li>
+			<li><a class="foot-nav-a" href="">加入美西</a></li>
+			<li><a class="foot-nav-a" href="">网站地图</a></li>
+			<li><a class="foot-nav-a" href="">联系我们</a></li> 
+		</ul>
+	</div>
+	<div id="foot-last">
+		<ul>
+			<li id="foot-last1"><a class="move" href=""><img src="img/foot-last-a.png"/><img class="disp" src="img/foot-last-aa.png"/></a></li>
+			<li id="foot-last2"><a class="move" href=""><img src="img/foot-last-b.png"/><img class="disp" src="img/foot-last-bb.png"/></a></li>
+			<li id="foot-last3"><a href="">媒体支持:</a></li>
+			<li id="foot-last4"><a class="move" href=""><img src="img/foot-last-c.png"/><img class="disp" src="img/foot-last-cc.png"/></a></li>
+			<li id="foot-last5"><a class="move" href=""><img src="img/foot-last-d.png"/><img class="disp" src="img/foot-last-dd.png"/></a></li>
+			<li id="foot-last6"><a href=""><img src="img/foot-last-e.png"/></a></li>
+		</ul>
+	</div>
+	<div id="last">
+		<p id="last1"><span>Copyright © 2008-2016 美西时尚-</span><a href="">高端时尚生活电商</a></p>
+		<p id="last2"><a href="">沪ICP备09001221号</a></p>
+		<p id="last3">
+			<a href=""><img src="img/good.png"/></a>
+			<a href=""><img src="img/good1.png"/></a>
+		</p>
+		
+	</div>
+	
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+		$(function(){
+			$("#header-right2").hover(function(){
+				$(this).find("#guanzhu").show();
+		
+			},function(){
+		
+				$(this).find("#guanzhu").hide();
+			})
+	
+			$("#header-right3").hover(function(){
+				$(this).find("#header-right3-xia").show();
+		
+			},function(){
+		
+				$(this).find("#header-right3-xia").hide();
+			})
+			
+			$("#nav ul").find(".nav-li").hover(function(){
+				$(this).css({"backgroundColor":"#8e0c3a"})
+				
+				
+			},function(){
+				$(this).css({"backgroundColor":"#ffffff"})
+			})
+			$(".nav-li1").hover(function(){
+				$(this).find("div").show()
+			},function(){
+				$(this).find("div").hide()
+			})
+			$("#foot-nav ul li").hover(function(){
+				$(this).find(".foot-nav-a").css({"color":"#fff"});
+		
+			},function(){
+		
+				$(this).find(".foot-nav-a").css({"color":"#7a7a7a"});
+			})
+			$(".trends-ul li").hover(function(){
+				$(this).find("a").find("img").animate({"opacity":"0.5"});
+			},function(){
+				$(this).find("a").find("img").animate({"opacity":"1"});
+			})
+			$("#fixtop-right").hover(function(){
+				$("#fix-nav").show();
+		
+			},function(){
+		
+				$("#fix-nav").hide();
+				
+			})
+			$(".move").hover(function(){
+				$(this).find("img").removeClass();
+				$(this).find("img").eq(0).addClass("disp");
+		
+			},function(){
+		
+				$(this).find("img").removeClass();
+				$(this).find("img").eq(1).addClass("disp");
+				
+			})
+			$("#banner").mouseenter(function(){
+				$("#banner-pre").show().mouseenter(function(){$("#banner-pre").css({"background":"url(img/load.png) 0 0"})});
+				$("#banner-pre").show().mouseleave(function(){$("#banner-pre").css({"background":"url(img/load.png) 0 66px"})});
+				$("#banner-next").show().mouseenter(function(){$("#banner-next").css({"background":"url(img/load.png) 0 -66px"})});
+				$("#banner-next").show().mouseleave(function(){$("#banner-next").css({"background":"url(img/load.png) 0 132px"})});
+			})
+			 .mouseleave(function(){
+			 	$("#banner-next ,#banner-pre").hide()
+			 })
+		
+			 
+
+
+
+			
+			
+		})
+		//轮播图	
+		var ul=document.getElementById("soldul");
+		var soldIndex=1;
+		var soldtimer; //每个多长时间，就播放下一页
+		var isPause=false; 
+		var pre=document.getElementById("sold-pre");
+		startsold();
+		function startsold(){
+			clearInterval(soldtimer);
+			soldtimer=setInterval(function(){
+		    if(soldIndex>8){
+		        //把ul 拉回到最右端；
+		        ul.style.left=0;
+		        //页码重新初始化为1；
+	            soldIndex=1;
+	        }
+	        startMove(ul,{left:-180*soldIndex});
+	        soldIndex++;
+	   		},3000) 
+		}
+		/*pre.onclick=function(){
+			clearInterval(soldtimer);
+			soldIndex-=1;
+			if(soldIndex>8){
+				startMove(ul,{left:-180*8}); 
+			}
+			startMove(ul,{left:-180*soldIndex});
+			soldIndex++;
+			startsold();
+		}*/
+		 
+	</script>
+</html>

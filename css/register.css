@@ -1,0 +1,78 @@
+#top{height: 36px;width: 100%;background: #f4f4f4;}
+#header{width: 960px;height: 36px;margin: 0 auto;}
+#header-left{width: 150px;height: 36px;float: left; }
+#header-right{width: 376px;height: 36px;float: right; }
+#header-left1{height: 18px;width: 40px;float: left; }
+#header-left2{height: 18px;width: 54px;border-left: 1px solid #cccccc;float: left;text-align: center;}
+#header-left3{height: 18px;width: 48px;float: left;text-align: center;}
+#header-left a{color: #7a7a7a;display:block;margin-top: 9px;}
+#header-left a:hover{color:#b03d3d}
+#header-right1{width: 142px;height: 36px;float:left; line-height: 36px;}
+#header-right2{width: 66px;height: 36px;float: left; margin-left:22px ; position:relative;}
+#header-right3{width:146px;height: 36px;float: left; position: relative;}
+#header-right2 img{margin-top: 12px; float: left;}
+#header-right2 span{display: block ;width: 52px;height: 36px;line-height: 36px;float: left;}
+#guanzhu{background:#fff;width: 162px;height: 62px;border: 1px solid #ccc;position: absolute;top: 36px;right: 0;display: none;}
+#guanzhu ul li{width: 60px;height: 42px;float: left;margin: 10px; }
+#guanzhu ul li img{margin: 0;width: 30px;height: 23px;margin-left: 19px;;}
+#guanzhu ul li a{color: #7A7A7A;display: block;text-align: center; }
+#guanzhu ul li a:hover {color: #8E0C3A;} 
+#guanzhu ul li em{margin-left:4px ;display: block; }
+#header-right3 a{width: 144px;border: 1px solid #F4F4F4;height: 29px;display: block;color: #838383;margin-top:5px ;}
+#header-right3 a:hover{background: #fff;border: 1px solid #afafaf; border-bottom:1px solid #fff ;z-index: 10;}
+#header-right3-left{width: 114px;height:18px ;margin-top:3px ;float: left; color: #838383}
+#header-right3-left em{color: #838383;display: block;float: left;width: 20px;height: 16px;margin-left: 24px;margin-top: 1px;}
+#header-right3-left i{color: #838383;display: block;float: left;width: 68px;height: 17px; }
+#header-right3-right{float: left;width:29px;height: 18px;border-left: 1px solid #afafaf; margin-top:3px }
+#header-right3-right i{display: block;width: 12px;height: 17px; margin-left: 8px;}
+#header-right3-xia{color: #838383; position: absolute;top: 34px;right: 0;width: 275px;height:58px;padding: 5px 20px 10px 20px;background: #fff;border: 1px solid #ccc;
+display: none;text-align: center;line-height: 58px;z-index: 9;}
+
+#logo{width: 960px;height: 100px;margin: 0 auto;}
+#logo-weichat{width: 72px;height: 72px;float: left;padding:17px 3px 11px 19px}
+#logo-wen{width: 88px;height:38px;float: left;padding:38px 0px 24px 0px}
+#logo-big{width: 280px;height:50px;float: left;margin:28px 160px 22px 160px}
+#logo-sea{width: 160px;height:30px;float: left;margin-top: 40px;margin-left: 18px; }
+#logo-wen-p1{color: #eb3e55;font-size: 14px;line-height: 18px;}
+#logo-wen-p2{color: #b9b9b9;font-size: 10px;line-height: 18px;}
+#logo-sea input{width: 130px;height:25px;color: #999999;float: left;border: 1px solid #afafaf;border-right: none;}
+#logo-sea button{cursor: pointer;width: 26px;height: 27px;border: 1px solid #afafaf;border-left: none;float: left;}
+
+#register{width: 960px;height: 517px;margin: 22px auto 30px;background: url(../img/register/register-banner.jpg);position: relative;}
+#reg1{width: 373px;height: 142px;position: absolute;top:28px;left: 66px;}
+#reg2{width: 750px;height: 26px;position: absolute;top:164px;left: 210px;}
+#Form{width: 280px;height: 270px;position: absolute;top:205px;left: 103px;}
+#Form .p-margint{margin-top: 20px;}
+#Form .reg-later{margin-top: 9px;}
+#Form .margint_{margin-top: 20px;margin-left: 70px;color: #8e0c3a;}
+ 
+#_radio{margin-left: 70px;margin-right: 2px; } 
+#Form p span{color: #666666;}
+#Form p ._input{width: 202px;height: 20px;border: 1px solid #bbbbbb;color: #cccccc;}
+#_button{width: 204px;height: 30px;background: #8e0c3a;color:#ffffff;margin-left:70px ;border: none;}
+#Login{color: #8e0c3a;}
+#reg-later{margin-left:200px}
+
+
+
+
+
+
+
+ 
+#foot-nav{width: 960px;height: 22px;margin:0 auto;background: #eeeeee;}
+#foot-nav ul li{width: 90px;height:22px;float: left;text-align: center;line-height: 22px;}
+#foot-nav ul li:hover{background:#666666 ; }
+#foot-nav ul{margin-left: 76px;}
+#foot-nav ul li a{color: #7a7a7a;font-size: 12px;display: block;}
+
+ 
+
+#last{width: 960px;height: 82px;margin:0 auto;margin-top: 16px;}
+#last1{width: 960px;height: 12px; text-align: center;}
+#last2{width: 960px;height: 12px;text-align: center;margin-top: 8px;margin-bottom: 12px;}
+#last3{width: 544px;height: 47px;padding-left: 416px; }
+#last3 img{float: left;}
+#last1 a,#last2 a{color:#7a7a7a}
+#last1 span{color:#7a7a7a}
+#last1 a:hover,#last2 a:hover{color:#972828}
